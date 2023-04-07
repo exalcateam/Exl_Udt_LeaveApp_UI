@@ -1,0 +1,59 @@
+
+<div class="header " >
+   
+    <div>
+    
+        <mat-toolbar class="container-fluid" *ngIf="inlogin">
+            <span class="example-spacer"></span>
+            
+            <div class="d-flex gap-5">
+                <a href=""><i class="fa-solid fa-bell fa-shake"></i></a>
+                <a href="" routerLink="/employeelogin"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a (click)="fnof()"><i class="fa-solid fa-share-nodes fa-beat"></i></a>
+            </div>
+          
+            
+        </mat-toolbar>
+        <div>
+            <router-outlet></router-outlet> 
+        </div>
+      
+   
+        <div class="side-nav" *ngIf="inlogin">
+            
+            <a href="#" class="logo">
+
+                <img src="../assets/images/exalcalogo.png" class="logoimg">
+                
+                <div class="imo">
+                <a href=""><i class="fa-solid fa-circle-user fa-shake"></i></a>
+                </div><br>
+
+                <div class="get" style="font-style: italic;font-weight: bold;">
+                    Hii!!{{c.username}}
+                </div>
+
+           </a>
+           
+            <ul class="nav-link">
+                <li><a href="#"><i class="fa-sharp fa-solid fa-house-user"></i><p>Home</p></a></li>
+                <li ><a  (click)="openDialog()"><i class="fa-sharp fa-solid fa-address-card" ></i><p >My info</p></a></li>
+                <li><a href="#"><i class="fa-regular fa-calendar-days"></i><p>Leave Apply</p></a></li>
+                <li><a href="#"><i class="fa-sharp fa-regular fa-calendar-check"></i><p>Leave balance</p></a></li>
+                <li><a href="#"><i class="fa-regular fa-calendar-days"></i><p>Calendar</p></a></li>
+                <div class="active">
+                   
+                </div>
+            </ul>
+        
+        </div>
+        
+       
+    </div>
+ 
+</div>
+
+
+
+
+

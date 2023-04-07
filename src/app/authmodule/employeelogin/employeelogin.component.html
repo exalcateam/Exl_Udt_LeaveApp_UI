@@ -1,0 +1,40 @@
+<div class="container-fluid" >
+   <div class="row d-flex">
+    <div class="col-sm-6" style="margin-top:80px  ;">
+        <img src="../../../assets/images/emp.png" width="600px">
+  </div>
+     <div class="col-sm-6">
+      <mat-card class="login" >
+          <form [formGroup]="registration">
+          <mat-card-header class="logo">
+              <img src="../../assets/images/exalcalogo.png" >
+          </mat-card-header>
+          <h2 class="header" style="font-family: 'Times New Roman', Times, serif;">Employee Login</h2>
+          <div>
+             <mat-form-field appearance="outline">
+                  <mat-label>Username</mat-label>
+                  <input type="text" matInput formControlName="username">
+                  <mat-icon matIconSuffix>account_circle</mat-icon>
+              </mat-form-field>
+          </div>&nbsp;
+          <div>
+              <mat-form-field appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input type="password"  matInput formControlName="password">
+                  <mat-icon matIconSuffix>lock</mat-icon>
+              </mat-form-field>
+          </div>&nbsp;
+          <div class="recaptcha">
+             <re-captcha (resolved)="resolved($event)" siteKey="6LeGy8UkAAAAABHvs37juXpUD3K9gWU2K4Us6MN6" theme="dark" formControlName="captcha"></re-captcha>
+          </div>&nbsp;
+          <div>
+              <button mat-button class="btn" type="button"
+              (click)="submit()">Submit</button>
+          </div>&nbsp;
+      </form>
+      <p class="para" style="text-decoration: underline;">forgot password</p>
+      </mat-card>
+     </div>
+   </div>
+</div>
+  

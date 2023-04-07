@@ -1,0 +1,18 @@
+<div class="container" >
+    <form [formGroup]="aboutinfo">
+        <mat-card class="profile">
+         <mat-card-header>
+            <mat-card-title>My info</mat-card-title>
+         </mat-card-header>
+         <mat-card-content>
+            <p>Name:{{c.username}}</p>
+            <p>Email:{{c.emailId}}</p>
+            <p>Date of Birth:{{c.dateofBirth}}</p>
+            <p>Gender:{{c.gender}}</p>
+            <p>Job Role:{{c.jobRole}}</p>
+            <p>Phone Number:{{c.phoneNumber}}</p>
+            <button mat-dialog-close mat-button>Ok</button>
+       </mat-card-content>
+         </mat-card>
+    </form>
+</div>
